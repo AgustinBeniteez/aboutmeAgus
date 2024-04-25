@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #3498db, #95a5a6); /* Degradado de azul a gris */
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.profile-info {
+    flex: 1;
+    padding: 20px;
+    padding-left: 50px; /* Ajusta el padding a tu gusto */
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+h1 {
+    font-family: "CascadiaCode-Regular", sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    -webkit-text-stroke: 3px #ffffff;
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+}
+p {
+    font-family: "CascadiaMono-Regular", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px 0; /* Agrega un pequeño margen superior e inferior */
+}
+img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
