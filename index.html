@@ -13,11 +13,13 @@
             align-items: center;
             height: 100vh;
             background: linear-gradient(to bottom, #3498db, #95a5a6); /* Degradado de azul a gris */
+            position: relative; /* Añadido para que el contenedor de texto absoluto sea relativo a él */
         }
         .container {
             display: flex;
             width: 100%;
             height: 100%;
+            position: relative; /* Añadido para que el contenedor de texto absoluto sea relativo a él */
         }
         .profile-info {
             flex: 1;
@@ -34,12 +36,14 @@
             font-weight: 400;
             -webkit-text-stroke: 3px #ffffff;
             margin: 0; /* Elimina el margen predeterminado del h1 */
+       
         }
         p {
             font-family: "CascadiaMono-Regular", sans-serif;
             font-size: 40px;
             font-weight: 400;
             margin: 10px 0; /* Agrega un pequeño margen superior e inferior */
+            max-width: 1090px;
         }
         .button-container {
             display: flex;
@@ -62,6 +66,20 @@
             max-width: 50%;
             height: auto;
             object-fit: cover;
+            position: absolute; /* Posicionamiento absoluto para que el texto pueda estar detrás */
+            right: 0; /* Ajusta la posición de la imagen */
+            z-index: -1; /* Asegura que la imagen esté detrás del texto */
+        }
+        .behind-text {
+            position: absolute;
+            right: 28%;
+            top: 40%;
+            transform: translate(50%, -50%); /* Centra vertical y horizontalmente */
+            color: #EDBB59; /* Color de texto con opacidad para que sea semi-transparente */
+            font-size: 800px;
+            font-family: "inter", sans-serif;
+            white-space: nowrap; /* Evita que el texto se desborde */
+            z-index: -1; /* Asegura que esté detrás de la imagen */
         }
     </style>
 </head>
@@ -96,6 +114,7 @@
                 </button>
             </div>
         </div>
+        <div class="behind-text">{/}</div> <!-- Contenedor para el texto detrás de la imagen -->
         <img src="agus.png" alt="Imagen de Agustín Benítez">
     </div>
 </body>
