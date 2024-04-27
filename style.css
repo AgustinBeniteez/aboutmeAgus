@@ -112,7 +112,7 @@ img {
 }
 .behind-text1 {
     position: absolute;
-    right: 27%;
+    right: 26%;
     top: 40%;
     transform: translate(50%, -50%); /* Centra vertical y horizontalmente */
     color: #EDBB59; /* Color de texto con opacidad para que sea semi-transparente */
