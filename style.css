@@ -48,6 +48,16 @@ h1 {
     z-index: 1; /* Asegura que esté detrás de la imagen */
     position: relative;
 }
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
 p {
    font-family: "Cascadia Code", monospace;
     font-size: 38px;
