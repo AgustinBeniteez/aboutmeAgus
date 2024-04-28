@@ -24,11 +24,27 @@ section {
 }
 .knowledge {
   height: 110vh;
-  background-color: #415b79;
+  background: linear-gradient(
+    -15.43deg,
+    rgb(121, 149, 170) 0%,
+     #95a5a6
+  );
+}
+.knowledge2 {
+  height: 110vh;
+  background: linear-gradient(
+    -15.43deg,
+    #95a5a6,
+     rgb(121, 149, 170) 0%
+  );
 }
 .projects {
   height: 100vh;
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    -15.43deg,
+    #95a5a6,
+     rgb(121, 149, 170) 0%
+  );
 }
 
 .container {
@@ -186,7 +202,7 @@ img {
       bottom: 20px;
   }
   50% {
-      bottom: 25px; /* Ajusta la posición más alta durante la animación */
+      bottom: 29px; /* Ajusta la posición más alta durante la animación */
   }
   100% {
       bottom: 20px;
@@ -237,10 +253,47 @@ img {
     top: 1890px;
   }
   50% {
-    top: 1880px;
+    top: 1870px;
   }
   100% {
     top: 1890px;
+  }
+}
+
+.bajar2 {
+  position: absolute;
+  top: 2890px;
+  left: 50%; /* Centra horizontalmente el botón */
+  transform: translateX(-50%);
+  width: 200px;
+  height: 14px;
+  padding: 0px;
+  background-color: #ffffff; /* Cambia esto por el color de fondo deseado */
+  border: none;
+  cursor: pointer;
+  animation: subirBajar2 2s infinite; /* Animación constante de subir y bajar */
+}
+
+.bajar2::after {
+  content: "Projets";
+  display: block;
+  position: absolute;
+  top: -20px; /* Ajusta la posición del texto según tu preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff; /* Cambia esto por el color del texto deseado */
+}
+
+/* Animación */
+@keyframes subirBajar2 {
+  0% {
+    top: 2920px;
+  }
+  50% {
+    top: 2940px;
+  }
+  100% {
+    top: 2920px;
   }
 }
 
@@ -251,7 +304,7 @@ svg{
 }
 
 .ubuntuicon{
-  width:152px ;
+  width:152px !important;
   height: 160px;
 }
 .windicon{
@@ -259,4 +312,61 @@ svg{
   height: 160px;
   padding-left: 26px;
   padding-top: 6px;
+}
+
+.iconvs{
+  width:130px ;
+  height: 160px;
+}
+.knowledge .profile-info {
+  max-width: 60%; /* Ajusta el ancho máximo del contenedor de texto */
+}
+
+.skillsicons1 {
+  max-width: 35%; /* Ajusta el ancho máximo del contenedor de iconos */
+}
+
+.skillsicons1 svg {
+  width: 22%;
+  margin-bottom: 20px; /* Ajusta este valor según tu preferencia */
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  padding: 10px;
+  color: #fff;
+  font-family: "Cascadia Code", monospace;
+  z-index: 2; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* Elimina los estilos de lista */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Espacio entre los elementos */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Quita el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+  text-decoration: none; /* Quita la subrayado del enlace */
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+}
+
+nav img{
+  width: 60px;
+  padding-right: 20px;
+}
+a {
+  text-decoration: none;
 }

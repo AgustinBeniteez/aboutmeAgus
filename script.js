@@ -39,6 +39,15 @@ document.querySelector('.bajar').addEventListener('click', function() {
 // Para el segundo botón "bajar1"
 document.querySelector('.bajar1').addEventListener('click', function() {
     // Obtén el elemento siguiente al conocimiento para desplazarte a él
+    var nextSection = document.querySelector('.knowledge2');
+    nextSection.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+// Para el segundo botón "bajar1"
+document.querySelector('.bajar2').addEventListener('click', function() {
+    // Obtén el elemento siguiente al conocimiento para desplazarte a él
     var nextSection = document.querySelector('.projects');
     nextSection.scrollIntoView({
         behavior: 'smooth'
