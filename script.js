@@ -91,3 +91,25 @@ cards.forEach(card => {
 });
 
 
+const button = document.querySelector('.allp');
+
+// Añade un event listener para el evento 'click'
+button.addEventListener('click', function() {
+  // Abre una nueva pestaña con la URL especificada
+  window.open('https://github.com/AgustinBeniteez?tab=repositories', '_blank');
+});
+
+
+    // Redireccionar a la sección de IMG LOGO
+
+document.getElementById("logo").addEventListener("click", function() {
+
+    // Redireccionar a la sección correspondiente
+    var hash = "#presentation"; // Cambiar al hash de la sección deseada
+    var targetElement = document.querySelector(hash);
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+});
