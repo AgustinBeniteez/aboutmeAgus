@@ -27,3 +27,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     startTextAnimation(0);
 });
+
+
+document.querySelector('.bajar').addEventListener('click', function() {
+    document.getElementById('knowledge').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
