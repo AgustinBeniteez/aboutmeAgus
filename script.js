@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-    var dataText = ["Utrecht.", "Full Service.", "Webdevelopment.", "Wij zijn Codefield!"];
+    var dataText = ["Agustín Benítez"];
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 typeWriter(text, i + 1, fnCallback)
             }, 100);
         } else if (typeof fnCallback == 'function') {
-            setTimeout(fnCallback, 700);
+            setTimeout(fnCallback, 900);
         }
     }
 
