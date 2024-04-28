@@ -5,6 +5,12 @@
   --banco:#fff;
 }
 
+.css{
+  color: var(--css);
+}
+.html{
+  color: var(--html);
+}
 body, html {
   margin: 0;
   padding: 0;
@@ -78,7 +84,7 @@ h1 {
   z-index: 1; /* Asegura que esté detrás de la imagen */
   position: relative;
 }
-span {
+h1 span {
   border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
