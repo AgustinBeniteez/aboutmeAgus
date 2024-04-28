@@ -370,3 +370,63 @@ nav img{
 a {
   text-decoration: none;
 }
+
+
+
+/*****************************cards***********************************/
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+ margin: 14%;
+ position: relative;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  padding: 30px;
+position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: #ffffff;
+  box-shadow: 0 7px 11px rgba(0, 0, 0, 0.301);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.h1pro{
+  position: absolute;
+ top: 100px;
+  color: #fff;
+}

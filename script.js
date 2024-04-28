@@ -53,3 +53,19 @@ document.querySelector('.bajar2').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+
+// Cards
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transition = 'transform 0.5s ease';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transition = 'transform 0.5s ease';
+    card.style.transform = 'rotateY(0deg)';
+  });
+});
