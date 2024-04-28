@@ -155,3 +155,40 @@ img {
     position: relative;
   }
 }
+
+.bajar {
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición del botón en la parte inferior de la sección */
+  left: 35%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 14px;
+  padding: 0px;
+  background-color: #ffffff; /* Cambia esto por el color de fondo deseado */
+  border: none;
+  cursor: pointer;
+  animation: subirBajar 2s infinite; /* Animación constante de subir y bajar */
+}
+
+.bajar::after {
+  content: "Skills";
+  display: block;
+  position: absolute;
+  top: -20px; /* Ajusta la posición del texto según tu preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff; /* Cambia esto por el color del texto deseado */
+}
+
+/* Animación */
+@keyframes subirBajar {
+  0% {
+      bottom: 20px;
+  }
+  50% {
+      bottom: 25px; /* Ajusta la posición más alta durante la animación */
+  }
+  100% {
+      bottom: 20px;
+  }
+}
