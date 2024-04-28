@@ -1,3 +1,10 @@
+:root{
+  --html:#e65100;
+  --css:#0277bd;
+  --gold:#edbb59;
+  --banco:#fff;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -57,7 +64,7 @@ section {
 
 .profile-info {
   text-align: left;
-  color: #ffffff;
+  color:  var(--banco);
   max-width: 1200px;
   padding: 20px;
 }
@@ -66,7 +73,7 @@ h1 {
   font-family: "Cascadia Code", monospace;
   font-size: 100px;
   font-weight: 400;
-  -webkit-text-stroke: 3px #ffffff;
+  -webkit-text-stroke: 3px var(--banco);
   margin: 0; /* Elimina el margen predeterminado del h1 */
   z-index: 1; /* Asegura que esté detrás de la imagen */
   position: relative;
@@ -96,9 +103,9 @@ p {
 }
 
 button {
-  background-color: #ffffff;
+  background-color: var(--banco);
   color: #3f3f3f;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--banco);
   font-size: 20px;
   cursor: pointer;
   padding: 10px 20px;
@@ -126,7 +133,7 @@ img {
   right: 27%;
   top: 40%;
   transform: translate(50%, -50%); /* Centra vertical y horizontalmente */
-  color: #edbb59; /* Color de texto con opacidad para que sea semi-transparente */
+  color: var(--gold); /* Color de texto con opacidad para que sea semi-transparente */
   font-size: 800px;
   font-family: "inter", sans-serif;
   white-space: nowrap; /* Evita que el texto se desborde */
@@ -138,7 +145,7 @@ img {
   right: 26%;
   top: 40%;
   transform: translate(50%, -50%); /* Centra vertical y horizontalmente */
-  color: #edbb59; /* Color de texto con opacidad para que sea semi-transparente */
+  color: var(--gold); /* Color de texto con opacidad para que sea semi-transparente */
   font-size: 800px;
   font-family: "inter", sans-serif;
   white-space: nowrap; /* Evita que el texto se desborde */
@@ -155,7 +162,7 @@ img {
     font-family: "Cascadia Code", monospace;
     font-size: 100px;
     font-weight: 400;
-    color: #f2f2f2;
+    color: var(--banco);
     margin: 0; /* Elimina el margen predeterminado del h1 */
     z-index: 1; /* Asegura que esté detrás de la imagen */
     position: relative;
@@ -164,7 +171,7 @@ img {
     font-family: "Cascadia Code", monospace;
     font-size: 40px;
     font-weight: 400;
-    color: #f2f2f2;
+    color: var(--banco);
     margin: 10px 0; /* Agrega un pequeño margen superior e inferior */
     max-width: 1200px;
     z-index: 1; /* Asegura que esté detrás de la imagen */
@@ -180,7 +187,7 @@ img {
   width: 200px;
   height: 14px;
   padding: 0px;
-  background-color: #ffffff; /* Cambia esto por el color de fondo deseado */
+  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
   border: none;
   cursor: pointer;
   animation: subirBajar 2s infinite; /* Animación constante de subir y bajar */
@@ -193,7 +200,7 @@ img {
   top: -20px; /* Ajusta la posición del texto según tu preferencia */
   left: 50%;
   transform: translateX(-50%);
-  color: #fff; /* Cambia esto por el color del texto deseado */
+  color: var(--banco); /* Cambia esto por el color del texto deseado */
 }
 
 /* Animación */
@@ -231,7 +238,7 @@ img {
   width: 200px;
   height: 14px;
   padding: 0px;
-  background-color: #ffffff; /* Cambia esto por el color de fondo deseado */
+  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
   border: none;
   cursor: pointer;
   animation: subirBajar1 2s infinite; /* Animación constante de subir y bajar */
@@ -244,7 +251,7 @@ img {
   top: -20px; /* Ajusta la posición del texto según tu preferencia */
   left: 50%;
   transform: translateX(-50%);
-  color: #fff; /* Cambia esto por el color del texto deseado */
+  color: var(--banco); /* Cambia esto por el color del texto deseado */
 }
 
 /* Animación */
@@ -268,7 +275,7 @@ img {
   width: 200px;
   height: 14px;
   padding: 0px;
-  background-color: #ffffff; /* Cambia esto por el color de fondo deseado */
+  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
   border: none;
   cursor: pointer;
   animation: subirBajar2 2s infinite; /* Animación constante de subir y bajar */
@@ -281,7 +288,7 @@ img {
   top: -20px; /* Ajusta la posición del texto según tu preferencia */
   left: 50%;
   transform: translateX(-50%);
-  color: #fff; /* Cambia esto por el color del texto deseado */
+  color: var(--banco); /* Cambia esto por el color del texto deseado */
 }
 
 /* Animación */
@@ -338,7 +345,7 @@ nav {
   display: flex;
   align-items: center; /* Alinea los elementos verticalmente */
   padding: 10px;
-  color: #fff;
+  color: var(--banco);
   font-family: "Cascadia Code", monospace;
   z-index: 2; 
 }
@@ -360,7 +367,7 @@ nav ul li:first-child {
 
 nav ul li a {
   text-decoration: none; /* Quita la subrayado del enlace */
-  color: #fff; /* Cambia el color del texto según tu preferencia */
+  color: var(--banco); /* Cambia el color del texto según tu preferencia */
 }
 
 nav img{
@@ -413,7 +420,7 @@ position: relative;
   justify-content: center;
   align-items: center;
  
-  background-color: #ffffff;
+  background-color: var(--banco);
   box-shadow: 0 7px 11px rgba(0, 0, 0, 0.301);
 }
 
@@ -428,5 +435,6 @@ position: relative;
 .h1pro{
   position: absolute;
  top: 100px;
-  color: #fff;
+  color: var(--banco);
 }
+

@@ -55,6 +55,26 @@ document.querySelector('.bajar2').addEventListener('click', function() {
 });
 
 
+// scroll jumps nav
+        // Selecciona todos los enlaces del menú
+        const links = document.querySelectorAll('nav ul li a');
+        // Itera sobre cada enlace
+        links.forEach(link => {
+            // Añade un evento de clic a cada enlace
+            link.addEventListener('click', e => {
+                // Previene el comportamiento predeterminado de los enlaces
+                e.preventDefault();
+                // Obtiene el href del enlace
+                const href = link.getAttribute('href');
+                // Obtiene el elemento asociado al href
+                const targetElement = document.querySelector(href);
+                // Hace scroll suavemente al elemento
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
 // Cards
 
 const cards = document.querySelectorAll('.card');
@@ -69,3 +89,5 @@ cards.forEach(card => {
     card.style.transform = 'rotateY(0deg)';
   });
 });
+
+
