@@ -29,8 +29,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 
+// Para el primer botón "bajar"
 document.querySelector('.bajar').addEventListener('click', function() {
     document.getElementById('knowledge').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+// Para el segundo botón "bajar1"
+document.querySelector('.bajar1').addEventListener('click', function() {
+    // Obtén el elemento siguiente al conocimiento para desplazarte a él
+    var nextSection = document.querySelector('.projects');
+    nextSection.scrollIntoView({
         behavior: 'smooth'
     });
 });
