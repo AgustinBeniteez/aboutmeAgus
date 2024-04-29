@@ -606,3 +606,66 @@ pointer-events: none;
             transform: scale3d(1, 1, 1);
   }
 }
+
+.btndetrascard1{
+background-color: #6d1650;
+color: var(--banco);
+z-index: 2;
+transition: filter 0.3s ease; /* Transición para la propiedad filter */
+}
+  
+
+.btndetrascard2{
+  background: linear-gradient(108deg, #5E3481 0%, #00B3B1 100%);
+  color: var(--banco);
+  z-index: 2;
+  transition: filter 0.3s ease; /* Transición para la propiedad filter */
+}
+
+.btndetrascard3{
+  background-color: var(--html);
+color: var(--banco);
+z-index: 2;
+transition: filter 0.3s ease; /* Transición para la propiedad filter */
+}
+
+.btndetrascard12{
+  z-index: 2;
+  }
+    
+  
+  .btndetrascard22{
+    z-index: 2;
+  }
+  
+  .btndetrascard32{
+  z-index: 2;
+  }
+
+.btndetrascard1:hover{
+  background-color: #6d1650;
+  color: var(--banco);
+  z-index: 2;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+    
+  
+  .btndetrascard2:hover{
+    background: linear-gradient(108deg, #5E3481 0%, #00B3B1 100%);
+    color: var(--banco);
+    z-index: 2;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .btndetrascard3:hover{
+    background-color: var(--html);
+  color: var(--banco);
+  z-index: 2;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
