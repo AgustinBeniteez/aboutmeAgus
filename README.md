@@ -1,6 +1,6 @@
 ## Porfolio Agustín Benítez
 <a href="https://agustinbeniteez.github.io/aboutmeAgus/" target="_blank">
- <img alt="tutorial" height="290px" style="padding-right:20px;" src="imgreadme/agusbeni.webp"/><br> </a>
+ <img alt="tutorial" height="290px" style="padding-right:20px;" src="imgreadme/agusbeniporfolio.webp"/><br> </a>
 This is the official repository for the [Porfolio Agustín Benítez](https://agustinbeniteez.github.io/aboutmeAgus)
 
 ## |📗 Repositorys
