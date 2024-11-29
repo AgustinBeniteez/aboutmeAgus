@@ -134,14 +134,13 @@ h1 span {
 
 /* Estilo para el fondo de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  background-color: #4da3ff; /* Fondo celeste */
+  background-color: #67a8ee; /* Fondo celeste */
 }
 
 /* Estilo para la parte de deslizamiento (thumb) */
 ::-webkit-scrollbar-thumb {
-  background-color: #e6a122; /* Color del thumb (parte que se mueve) */
+  background-color: #0f74c7; /* Color del thumb (parte que se mueve) */
   border-radius: 10px; /* Borde redondeado */
-  border: 3px solid #59acc5; /* Borde alrededor del thumb */
 }
 
 /* Estilo para el hover del thumb */
