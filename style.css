@@ -127,7 +127,7 @@ h1 span {
 }
 p {
   font-family: "Cascadia Code", monospace;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 400;
   margin: 10px 0; /* Agrega un pequeño margen superior e inferior */
   max-width: 1200px;
@@ -216,53 +216,6 @@ img {
   }
 }
 
-.bajar {
-  position: absolute;
-  bottom: 20px; /* Ajusta la posición del botón en la parte inferior de la sección */
-  left: 35%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 14px;
-  padding: 0px;
-  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
-  border: none;
-  cursor: pointer;
-  animation: subirBajar 2s infinite; /* Animación constante de subir y bajar */
-  transition: filter 0.3s ease; 
-}
-
-.bajar:hover{
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-}
-.bajar1:hover{
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-}
-.bajar2:hover{
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-}
-.bajar::after {
-  content: "Skills";
-  display: block;
-  position: absolute;
-  top: -20px; /* Ajusta la posición del texto según tu preferencia */
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--banco); /* Cambia esto por el color del texto deseado */
-}
-
-/* Animación */
-@keyframes subirBajar {
-  0% {
-      bottom: 20px;
-  }
-  50% {
-      bottom: 29px; /* Ajusta la posición más alta durante la animación */
-  }
-  100% {
-      bottom: 20px;
-  }
-}
-
 .knowledge .container {
   flex-direction: row; /* Cambia la dirección de flexbox para colocar la imagen y el texto en fila */
 }
@@ -275,84 +228,6 @@ img {
 .knowledge .profile-info {
  margin-top: -200px;
 }
-
-
-.bajar1 {
-  position: absolute;
-  top: 1890px;
-  left: 50%; /* Centra horizontalmente el botón */
-  transform: translateX(-50%);
-  width: 200px;
-  height: 14px;
-  padding: 0px;
-  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
-  border: none;
-  cursor: pointer;
-  animation: subirBajar1 2s infinite; /* Animación constante de subir y bajar */
-  transition: filter 0.3s ease;
-}
-
-.bajar1::after {
-  content: "More Skills";
-  display: block;
-  position: absolute;
-  top: -20px; /* Ajusta la posición del texto según tu preferencia */
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--banco); /* Cambia esto por el color del texto deseado */
-}
-
-/* Animación */
-@keyframes subirBajar1 {
-  0% {
-    top: 1890px;
-  }
-  50% {
-    top: 1870px;
-  }
-  100% {
-    top: 1890px;
-  }
-}
-
-.bajar2 {
-  position: absolute;
-  top: 2890px;
-  left: 50%; /* Centra horizontalmente el botón */
-  transform: translateX(-50%);
-  width: 200px;
-  height: 14px;
-  padding: 0px;
-  background-color: var(--banco); /* Cambia esto por el color de fondo deseado */
-  border: none;
-  cursor: pointer;
-  animation: subirBajar2 2s infinite; /* Animación constante de subir y bajar */
-  transition: filter 0.3s ease;
-}
-
-.bajar2::after {
-  content: "Projets";
-  display: block;
-  position: absolute;
-  top: -20px; /* Ajusta la posición del texto según tu preferencia */
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--banco); /* Cambia esto por el color del texto deseado */
-}
-
-/* Animación */
-@keyframes subirBajar2 {
-  0% {
-    top: 2920px;
-  }
-  50% {
-    top: 2940px;
-  }
-  100% {
-    top: 2920px;
-  }
-}
-
 
 svg{
   width:160px ;
@@ -629,9 +504,10 @@ z-index: 2;
 transition: filter 0.3s ease; /* Transición para la propiedad filter */
 }
 
-.btndetrascard12{
+.btndetrascard12 {
   z-index: 2;
-  }
+  margin-top: 40px;
+}
     
   
   .btndetrascard22{
@@ -669,3 +545,179 @@ transition: filter 0.3s ease; /* Transición para la propiedad filter */
   animation: jello-horizontal 0.9s both;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   }
+
+/* Media Queries */
+@media only screen and (max-width: 1128px) { /* Para tablets y dispositivos móviles */
+  /* Asegura que el contenedor de la imagen y el texto se apilen verticalmente */
+  .container {
+    display: flex;
+    flex-direction: column; /* Los elementos se apilan en lugar de alinearse en fila */
+    align-items: center; /* Centra los elementos */
+    justify-content: flex-start; /* Asegura que el contenido no se quede pegado al fondo */
+    padding: 20px; /* Agrega algo de espacio dentro del contenedor */
+  }
+
+  /* Ajusta la imagen para que ocupe el 100% de ancho en pantallas pequeñas */
+  img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo */
+    max-width: 100%; /* Impide que la imagen se expanda más allá del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+    margin-bottom: 20px; /* Agrega espacio entre la imagen y el texto */
+  }
+
+  /* Reajusta los tamaños de texto */
+  h1 {
+    font-size: 32px; /* Tamaño más pequeño para tablets */
+    -webkit-text-stroke: 2px var(--banco); /* Ajusta el grosor del borde */
+    margin: 0 0 10px 0; /* Margen superior e inferior */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  p {
+    font-size: 14px; /* Tamaño de fuente más pequeño para tablets */
+    margin: 0 0 20px 0; /* Espacio entre el párrafo y los elementos siguientes */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  /* Ajuste de los botones de navegación */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre los botones y el contenido anterior */
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px; /* Tamaño más pequeño para los botones */
+    border-radius: 25px;
+    margin: 5px; /* Espacio entre los botones */
+  }
+
+  /* Ajustes para el texto detrás */
+  .behind-text {
+    display: none;
+
+  }
+  .behind-text1 {
+    display: none;
+}
+
+  /* Asegura que el nav y los elementos estén correctamente alineados */
+  nav ul {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre el contenido y la barra de navegación */
+  }
+
+  nav ul li {
+    margin-top: 15px;
+  }
+
+  nav img {
+    width: 50px; /* Ajusta el tamaño del logo en la barra de navegación */
+  }
+
+
+  /* Ajusta el contenedor de las tarjetas */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 400px; /* Las tarjetas ocupan el 90% del ancho */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+  }
+
+  .card-inner {
+    padding: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .code {
+    font-size: 16px; /* Reduce el tamaño del texto en las tarjetas */
+  }
+  .knowledge p {
+    font-family: "Cascadia Code", monospace;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--banco);
+    margin: 10px 0;
+    max-width: 1200px;
+    z-index: 1;
+    position: relative;
+}
+.h1pro {
+  position: absolute;
+  top: -10px;
+  left: 45%;
+  color: var(--banco);
+
+}
+.imagen-con-degradado{
+  display: none;
+}
+.card-container{
+  margin-bottom: 50%;
+}
+.allp {
+  position: absolute;
+  bottom: -90px;
+  border: solid 3px var(--cdf);
+  transition: filter 0.3s ease;
+}
+.allp:hover {
+  /* Estilos que se aplicarán cuando el cursor esté sobre el botón */
+  position: absolute;
+  bottom: -90px;
+  border: solid 3px var(--cdf); 
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+}
+
+@media only screen and (max-width: 480px) { /* Para dispositivos móviles pequeños */
+  /* Ajusta aún más el tamaño de los elementos */
+  h1 {
+    font-size: 24px; /* Reduce aún más el tamaño del título */
+  }
+
+  p {
+    font-size: 12px; /* Reduce aún más el tamaño del texto */
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px; /* Tamaño de fuente más pequeño para los botones */
+  }
+
+  .behind-text {
+    font-size: 120px; /* Reduce aún más el tamaño del texto detrás */
+  }
+
+  .card {
+    width: 95%; /* Las tarjetas ocupan casi todo el ancho en pantallas pequeñas */
+  }
+
+
+  .knowledge p {
+        font-family: "Cascadia Code", monospace;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--banco);
+        margin: 10px 0;
+        max-width: 1200px;
+        z-index: 1;
+        position: relative;
+    }
+
+}
