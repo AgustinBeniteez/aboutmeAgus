@@ -51,6 +51,7 @@ body, html {
     #3498db,
     #95a5a6
   );
+  scroll-behavior: smooth;
 }
 
 section {
